@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comments-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: "Cabin Sketch";
+}
+
+.comments-container {
+  margin-top: 40px;
+  font-family: "Palatino";
+}
+
+.comment-form-title {
+  font-size: 22px;
+  font-family: "Cabin Sketch";
+}
+
+.comment-form-textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  border: 1px solid rgb(107, 114, 12);
+}
+
+.comment-form-button {
+  font-size: 16px;
+  padding: 8px 16px;
+  background: rgb(59, 130, 246);
+  border-radius: 8px;
+  color: white;
+  font-family: "Palatino";
+}
+
+.comment-form-button:hover:enabled {
+  cursor: pointer;
+  background: rgb(37, 99, 235);
+}
+
+.comment-form-button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.comment-form-cancel-button {
+  margin-left: 10px;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.comment-image-container {
+  margin-right: 12px;
+}
+
+.comment-image-container img {
+  border-radius: 50px;
+}
+
+.comment-right-part {
+  width: 100%;
+}
+
+.comment-content {
+  display: flex;
+}
+
+.comment-author {
+  margin-right: 8px;
+  font-size: 20px;
+  color: rgb(59, 130, 246);
+  font-family: "Palatino";
+}
+
+.comment-text {
+  font-size: 18px;
+}
+
+.comment-actions {
+  display: flex;
+  font-size: 12px;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.comment-action {
+  margin-right: 8px;
+}
+
+.comment-action:hover {
+  text-decoration: underline;
+}
+
+.replies {
+  margin-top: 20px;
+}
+
+.thongbaokhigiu{
+	padding-bottom: 10px;
+}
+.thongbaokhigiu:hover .thongbao{
+	display: block;
+}
+.thongbao{
+	/* display: none; */
+	position: absolute;	
+	top:55px;
+	right: 60px;
+	width: 400px;
+	background-color: #fff;
+	border: 1px solid #D3D3D3;
+	transform-origin: calc(100%-20px) top;
+	animation: hiendanthongbao  linear 0.25s; 
+	will-change: opacity,transform;
+	z-index: 10;
+	font-family: "Roboto, sans-serif";
+}
+
+.hidden{
+  display: none;
+}
+.thongbao::after{
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-color: transparent  transparent #fff transparent;
+	border-width: 8px 13px;
+	right: 23px;
+	top: -16px;
+}
+
+
+@keyframes hiendanthongbao{
+	from{
+		opacity: 0;
+		transform: scale(0);
+
+	}
+
+	to{
+		opacity: 1;
+		transform: scale(1);
+	}
+
+}
+.titlethongbao{			
+	margin-left: 15px;
+	color: var(--black-color);
+	height: 40px;
+	line-height: 40px;
+	cursor: text;
+	width: 100%;
+	opacity: 0.3;
+}
+
+.chocaivientrendau{
+	border-top: 1px solid #D3D3D3;
+}
+.sanpham{
+	display: flex;
+	text-decoration: none;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.dadoc{
+		background-color: rgba(238,75,43,0.1);
+}
+.anhthongbao{
+	margin-top: 15px;
+	margin-left: 10px;
+	height: 26px;
+	width: 36px;
+	object-fit: contain;
+}
+.chucuaanh{
+	margin-top: 8px;
+	margin-left: 8px;
+	display: block;
+	color: var(--black-color);
+	font-size: 1,4rem;
+	height: 36px;
+}
+.dong1chuanh{
+		margin: 0;
+    font-size:15px;
+}
+.dong2chuanh{
+		margin: 0;
+		font-size: 1.2rem;
+		font-weight: 200;
+}
+.xemtatca{
+	display: block;
+	color: var(--black-color);
+	line-height: 40px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 400;
+	padding-bottom: 1px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.empty-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.empty{
+	margin: 30px auto;
+	color: rgba(0, 0, 0, 0.6);
+}
